@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"led_i2c\startup_stm32f103xb.o"
+"led_i2c\main.o"
+"led_i2c\stm32f1xx_it.o"
+"led_i2c\stm32f1xx_hal_msp.o"
+"led_i2c\i2c-lcd.o"
+"led_i2c\stm32f1xx_hal_gpio_ex.o"
+"led_i2c\stm32f1xx_hal_i2c.o"
+"led_i2c\stm32f1xx_hal.o"
+"led_i2c\stm32f1xx_hal_rcc.o"
+"led_i2c\stm32f1xx_hal_rcc_ex.o"
+"led_i2c\stm32f1xx_hal_gpio.o"
+"led_i2c\stm32f1xx_hal_dma.o"
+"led_i2c\stm32f1xx_hal_cortex.o"
+"led_i2c\stm32f1xx_hal_pwr.o"
+"led_i2c\stm32f1xx_hal_flash.o"
+"led_i2c\stm32f1xx_hal_flash_ex.o"
+"led_i2c\stm32f1xx_hal_exti.o"
+"led_i2c\stm32f1xx_hal_tim.o"
+"led_i2c\stm32f1xx_hal_tim_ex.o"
+"led_i2c\system_stm32f1xx.o"
+--strict --scatter "LED_I2C\LED_I2C.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED_I2C.map" -o LED_I2C\LED_I2C.axf
