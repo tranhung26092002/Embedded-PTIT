@@ -1,0 +1,185 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Hung Hung, Hung, LIC=JL28G-VH6NZ-2ZVW4-F7I7B-WGZ93-2R7ME
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.21a
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+C:\Users\admin\Desktop\STM32F401CDU6\GPIO\KeilC\Project\Blink_Led.uvprojx
+Project File Date:  03/12/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Blink'
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_rcc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_wwdg.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_ll_gpio.c...
+compiling stm32f4xx_ll_pwr.c...
+compiling stm32f4xx_ll_rcc.c...
+assembling startup_stm32f401xe.s...
+compiling system_stm32f4xx.c...
+compiling main.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_ll_utils.c...
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_utils.h(194): error:  #20: identifier "UID_BASE" is undefined
+    return (uint32_t)(
+EAD_REG(*((uint32_t *)UID_BASE_ADDRESS)));
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_utils.h(203): error:  #20: identifier "UID_BASE" is undefined
+    return (uint32_t)(
+EAD_REG(*((uint32_t *)(UID_BASE_ADDRESS + 4U))));
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_utils.h(212): error:  #20: identifier "UID_BASE" is undefined
+    return (uint32_t)(
+EAD_REG(*((uint32_t *)(UID_BASE_ADDRESS + 8U))));
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_utils.h(223): error:  #20: identifier "FLASHSIZE_BASE" is undefined
+    return (uint32_t)(
+EAD_REG(*((uint32_t *)FLASHSIZE_BASE_ADDRESS)) & 0xFFFF);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_utils.h(241): error:  #20: identifier "PACKAGE_BASE" is undefined
+    return (uint32_t)(
+EAD_REG(*((uint32_t *)PACKAGE_BASE_ADDRESS)) & 0x0700U);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h(3021): error:  #20: identifier "RCC_CR_HSICAL_Pos" is undefined
+    return (uint32_t)(
+EAD_BIT(RCC->CR, RCC_CR_HSICAL) >> RCC_CR_HSICAL_Pos);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h(3035): error:  #20: identifier "RCC_CR_HSITRIM_Pos" is undefined
+    
+ODIFY_REG(RCC->CR, RCC_CR_HSITRIM, Value << RCC_CR_HSITRIM_Pos);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h(3045): error:  #20: identifier "RCC_CR_HSITRIM_Pos" is undefined
+    return (uint32_t)(
+EAD_BIT(RCC->CR, RCC_CR_HSITRIM) >> RCC_CR_HSITRIM_Pos);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h(4306): error:  #20: identifier "RCC_PLLCFGR_PLLN_Pos" is undefined
+    MODIFY_REG(RCC->PLLCFGR, RCC_PLLCFGR_PLLSRC | RCC_PLLCFGR_PLLM | RCC_PLLCFGR_PLLN,
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h(4412): error:  #20: identifier "RCC_PLLCFGR_PLLN_Pos" is undefined
+    MODIFY_REG(RCC->PLLCFGR, RCC_PLLCFGR_PLLSRC | RCC_PLLCFGR_PLLM | RCC_PLLCFGR_PLLN | RCC_PLLCFGR_PLLQ,
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h(4870): error:  #20: identifier "RCC_PLLCFGR_PLLN_Pos" is undefined
+    return (uint32_t)(
+EAD_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLN) >>  RCC_PLLCFGR_PLLN_Pos);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h(5062): error:  #20: identifier "RCC_SSCGR_INCSTEP_Pos" is undefined
+    
+ODIFY_REG(RCC->SSCGR, RCC_SSCGR_MODPER | RCC_SSCGR_INCSTEP | RCC_SSCGR_SPREADSEL, Mod | (Inc << RCC_SSCGR_INCSTEP_Pos) | Sel);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h(5083): error:  #20: identifier "RCC_SSCGR_INCSTEP_Pos" is undefined
+    return (uint32_t)(
+EAD_BIT(RCC->SSCGR, RCC_SSCGR_INCSTEP) >> RCC_SSCGR_INCSTEP_Pos);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h(6713): error:  #20: identifier "RCC_CSR_IWDGRSTF" is undefined
+    return (
+EAD_BIT(RCC->CSR, RCC_CSR_IWDGRSTF) == (RCC_CSR_IWDGRSTF));
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_rcc.h(6733): error:  #20: identifier "RCC_CSR_PINRSTF" is undefined
+    return (
+EAD_BIT(RCC->CSR, RCC_CSR_PINRSTF) == (RCC_CSR_PINRSTF));
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_system.h(673): warning:  #223-D: function "POSITION_VAL" declared implicitly
+    
+ODIFY_REG(SYSCFG->EXTICR[Line & 0xFF], (Line >> 16), Port << POSITION_VAL((Line >> 16)));
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_system.h(712): warning:  #223-D: function "POSITION_VAL" declared implicitly
+    return (uint32_t)(
+EAD_BIT(SYSCFG->EXTICR[Line & 0xFF], (Line >> 16)) >> POSITION_VAL(Line >> 16));
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_system.h(1270): error:  #20: identifier "DBGMCU_IDCODE_REV_ID_Pos" is undefined
+    return (uint32_t)(
+EAD_BIT(DBGMCU->IDCODE, DBGMCU_IDCODE_REV_ID) >> DBGMCU_IDCODE_REV_ID_Pos);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_pwr.h(919): error:  #20: identifier "PWR_CSR_UDRDY" is undefined
+    return (
+EAD_BIT(PWR->CSR, PWR_CSR_UDRDY) == (PWR_CSR_UDRDY));
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(26): warning:  #47-D: incompatible redefinition of macro "assert_param" (declared at line 167 of "..\Lib\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Project\STM32F4xx_StdPeriph_Templates\stm32f4xx_conf.h")
+  #define assert_param(expr) ((void)0U)
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(407): error:  #20: identifier "FLASH_SCALE2_LATENCY2_FREQ" is undefined
+        if((HCLK_Frequency > 
+TILS_SCALE2_LATENCY2_FREQ)&&(latency == LL_FLASH_LATENCY_0))
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(413): error:  #20: identifier "FLASH_SCALE2_LATENCY1_FREQ" is undefined
+          if((HCLK_Frequency > 
+TILS_SCALE2_LATENCY1_FREQ)&&(latency == LL_FLASH_LATENCY_0))
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(483): error:  #268: declaration may not appear after executable statement in block
+  ErrorStatus LL_PLL_ConfigSystemClock_HSI(LL_UTILS_PLLInitTypeDef *UTILS_PLLInitStruct,
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(483): warning:  #940-D: missing return statement at end of non-void function "LL_SetFlashLatency"
+  ErrorStatus LL_PLL_ConfigSystemClock_HSI(LL_UTILS_PLLInitTypeDef *UTILS_PLLInitStruct,
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(483): error:  #67: expected a "}"
+  ErrorStatus LL_PLL_ConfigSystemClock_HSI(LL_UTILS_PLLInitTypeDef *UTILS_PLLInitStruct,
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(622): error:  #20: identifier "RCC_PLLCFGR_PLLM_Pos" is undefined
+    pllfreq = PLL_InputFrequency / (UTILS_PLLInitStruct->PLLM & (
+CC_PLLCFGR_PLLM >> RCC_PLLCFGR_PLLM_Pos));
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(626): error:  #20: identifier "RCC_PLLCFGR_PLLN_Pos" is undefined
+    pllfreq = pllfreq * (UTILS_PLLInitStruct->PLLN & (
+CC_PLLCFGR_PLLN >> RCC_PLLCFGR_PLLN_Pos));
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(630): error:  #20: identifier "RCC_PLLCFGR_PLLP_Pos" is undefined
+    pllfreq = pllfreq / (((UTILS_PLLInitStruct->PLLP >> RCC_PLLCFGR_PLLP_Pos) + 1) * 2);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(691): error:  #20: identifier "AHBPrescTable" is undefined
+    hclk_frequency = 
+_LL_RCC_CALC_HCLK_FREQ(SYSCLK_Frequency, UTILS_ClkInitStruct->AHBCLKDivider);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c(691): error:  #20: identifier "RCC_CFGR_HPRE_Pos" is undefined
+    hclk_frequency = 
+_LL_RCC_CALC_HCLK_FREQ(SYSCLK_Frequency, UTILS_ClkInitStruct->AHBCLKDivider);
+C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c: 4 warnings, 26 errors
+".\Objects\Blink_Led.axf" - 26 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::Device:Startup:2.6.3
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+   * Component: RCC Version: 1.8.1
+   * Component: Common Version: 1.8.1
+   * Component: GPIO Version: 1.8.1
+   * Component: PWR Version: 1.8.1
+   * Component: UTILS Version: 1.8.1
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\admin\Desktop\STM32F401CDU6\GPIO\KeilC\Project\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f401xe.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F401xx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+
+   * Component: Keil::Device:STM32Cube LL:RCC:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_rcc.c
+
+   * Component: Keil::Device:STM32Cube LL:Common:1.8.1
+
+   * Component: Keil::Device:STM32Cube LL:GPIO:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_gpio.c
+
+   * Component: Keil::Device:STM32Cube LL:PWR:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_pwr.c
+
+   * Component: Keil::Device:STM32Cube LL:UTILS:1.8.1
+      Source file:   Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

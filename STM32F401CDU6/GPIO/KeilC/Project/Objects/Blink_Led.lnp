@@ -1,0 +1,14 @@
+--cpu Cortex-M4.fp
+".\objects\stm32f4xx_gpio.o"
+".\objects\stm32f4xx_rcc.o"
+".\objects\main.o"
+".\objects\stm32f4xx_ll_gpio.o"
+".\objects\stm32f4xx_ll_pwr.o"
+".\objects\stm32f4xx_ll_rcc.o"
+".\objects\stm32f4xx_ll_utils.o"
+".\objects\startup_stm32f401xe.o"
+".\objects\system_stm32f4xx.o"
+--strict --scatter ".\Objects\Blink_Led.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Blink_Led.map" -o .\Objects\Blink_Led.axf
